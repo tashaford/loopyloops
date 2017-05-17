@@ -25,11 +25,11 @@ def get_first_key(array)
   return array.keys.first()
 end
 
-def array_of_capitals(array)
-  array.each_key |capitals| return :capitals
+def array_of_capitals(hash)
+  countries_array = hash.values()
+  capitals = []
+  for country in countries_array
+    capitals.push(countries_array[1][:capital])
   end
+  return capitals
 end
-
-# for cap in array
-  #   return array.collect(cap, :capital)
-  # end

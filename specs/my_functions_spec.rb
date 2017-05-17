@@ -59,7 +59,7 @@ class My_Functions < MiniTest::Test
           }
         }
         result = array_of_capitals (countries)
-        assert_equal( [ 'Glasgow', 'Paris', 'Rome' ], result)
+        assert_equal( [ 'Glasgow', 'Paris', 'Rome'], result)
   end
 
 end
