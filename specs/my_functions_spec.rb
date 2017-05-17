@@ -43,4 +43,25 @@ class My_Functions < MiniTest::Test
     assert_equal( 'Ally', result )
   end
 
+  def test_return_capitals
+    countries = {
+          uk: {
+            capital: 'Glasgow',
+            population: 60000
+          },
+          france: {
+            capital: 'Paris',
+            population: 70000
+          },
+          italy: {
+            capital: 'Rome',
+            population: 56000
+          }
+        }
+        result = array_of_capitals (countries)
+        assert_equal( [ 'Glasgow', 'Paris', 'Rome' ], result)
+  end
+
 end
+
+

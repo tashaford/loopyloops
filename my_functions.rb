@@ -21,4 +21,15 @@ def find_item(array, item)
   return false
 end
 
+def get_first_key(array)
+  return array.keys.first()
+end
 
+def array_of_capitals(array)
+  array.each_key |capitals| return :capitals
+  end
+end
+
+# for cap in array
+  #   return array.collect(cap, :capital)
+  # end
